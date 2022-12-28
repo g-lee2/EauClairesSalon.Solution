@@ -10,5 +10,6 @@ namespace HairSalon.Models
     public int YearsOfExperience { get; set; }
     public string Rank { get; set; }
     public string Specialty { get; set; }
+    public List<Client> Clients { get; set; }
   }
 }
