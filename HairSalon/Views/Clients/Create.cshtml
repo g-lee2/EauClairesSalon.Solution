@@ -6,6 +6,9 @@
 
 <h4>Add a new client</h4>
 
+<p><strong>NOTE:</strong> You need to have at least one stylist addeded before you can add a client!</p>
+<p>Go to @Html.ActionLink("this page", "Create", "Stylists") to add a stylist.</p>
+
 @using (Html.BeginForm())
 {
   @Html.LabelFor(model => model.FirstName)
