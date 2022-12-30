@@ -1,7 +1,33 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
 
 body {
-  background-color: #272727;
-  color: black;
-  font-size: 12px;
-} */
+  background: whitesmoke;
+  font-family: Prosto, Sans-serif;
+  text-align: center;
+  align-items: center;
+  letter-spacing: 2px; 
+}
+
+ul {
+  display: inline-block;
+}
+
+p {
+  background-color: #bbc9bb;
+  color: white;
+  padding: 10px 20px;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  filter: brightness(200%);
+}
+
+input[type="text"] {
+  text-align: center;
+}
+

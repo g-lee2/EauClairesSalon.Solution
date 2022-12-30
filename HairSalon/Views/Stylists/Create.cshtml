@@ -4,20 +4,34 @@
 
 @model HairSalon.Models.Stylist
 
-<h4>Add a stylist</h4>
+<h2>Add a stylist</h2>
+<br />
 @using (Html.BeginForm())
 {
   @Html.Label("First Name")
-  @Html.TextAreaFor(model => model.FirstName)
+  <br />
+  @Html.TextBoxFor(model => model.FirstName)
+  <br />
   @Html.Label("Last Name")
-  @Html.TextAreaFor(model => model.LastName)
+  <br />
+  @Html.TextBoxFor(model => model.LastName)
+  <br />
   @Html.Label("Years of Experience")
-  @Html.TextAreaFor(model => model.YearsOfExperience)
+  <br />
+  @Html.TextBoxFor(model => model.YearsOfExperience)
+  <br />
   @Html.Label("Rank")
-  @Html.TextAreaFor(model => model.Rank)
+  <br />
+  @Html.TextBoxFor(model => model.Rank)
+  <br />
   @Html.Label("Specialty")
-  @Html.TextAreaFor(model => model.Specialty)
+  <br />
+  @Html.TextBoxFor(model => model.Specialty)
+  <br />
+  <br />
   <input type="submit" value="Add a stylist" />
 }
-
+<br />
+<br />
+<br />
 <p>@Html.ActionLink("Show all stylists", "Index")</p>
