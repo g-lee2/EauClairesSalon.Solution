@@ -11,10 +11,12 @@
 
 @using (Html.BeginForm())
 {
-  @Html.LabelFor(model => model.FirstName)
+  @Html.Label("First Name")
   @Html.TextBoxFor(model => model.FirstName)
-  @Html.LabelFor(model => model.LastName)
+  @Html.Label("Last Name")
   @Html.TextBoxFor(model => model.LastName)
+  @Html.Label("Phone Number")
+  @Html.TextBoxFor(model => model.PhoneNumber)
 
   @Html.LabelFor(model => model.Stylist)
   @Html.DropDownList("StylistId")

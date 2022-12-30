@@ -6,11 +6,11 @@
 @using HairSalon.Models
 
 <h2>Stylist Details</h2>
-<h3>@Html.DisplayNameFor(model => model.FirstName): @Html.DisplayFor(model => model.FirstName)</h3>
-<h3>@Html.DisplayNameFor(model => model.LastName): @Html.DisplayFor(model => model.LastName)</h3>
-<h3>@Html.DisplayNameFor(model => model.YearsOfExperience): @Html.DisplayFor(model => model.YearsOfExperience)</h3>
-<h3>@Html.DisplayNameFor(model => model.Rank): @Html.DisplayFor(model => model.Rank)</h3>
-<h3>@Html.DisplayNameFor(model => model.Specialty): @Html.DisplayFor(model => model.Specialty)</h3>
+<h3>First Name: @Html.DisplayFor(model => model.FirstName)</h3>
+<h3>Last Name: @Html.DisplayFor(model => model.LastName)</h3>
+<h3>Years of Experience: @Html.DisplayFor(model => model.YearsOfExperience)</h3>
+<h3>Rank: @Html.DisplayFor(model => model.Rank)</h3>
+<h3>Specialty: @Html.DisplayFor(model => model.Specialty)</h3>
 
 <p>@Html.ActionLink("Edit information", "Edit", new { id = Model.StylistId })</p>
 <p>@Html.ActionLink("Delete stylist", "Delete", new { id = Model.StylistId })</p>

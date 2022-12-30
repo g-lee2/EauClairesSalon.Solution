@@ -12,11 +12,11 @@
 {
   @Html.HiddenFor(model => model.ClientId)
 
-  @Html.LabelFor(model => model.FirstName)
+  @Html.Label("First Name") 
   @Html.EditorFor(model => model.FirstName)
-  @Html.LabelFor(model => model.LastName)
+  @Html.Label("Last Name")
   @Html.EditorFor(model => model.LastName)
-  @Html.LabelFor(model => model.PhoneNumber)
+  @Html.Label("Phone Number")
   @Html.EditorFor(model => model.PhoneNumber)
 
   @Html.LabelFor(model => model.Stylist)

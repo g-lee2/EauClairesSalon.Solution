@@ -7,15 +7,15 @@
 <h4>Add a stylist</h4>
 @using (Html.BeginForm())
 {
-  @Html.LabelFor(model => model.FirstName)
+  @Html.Label("First Name")
   @Html.TextAreaFor(model => model.FirstName)
-  @Html.LabelFor(model => model.LastName)
+  @Html.Label("Last Name")
   @Html.TextAreaFor(model => model.LastName)
-  @Html.LabelFor(model => model.YearsOfExperience)
+  @Html.Label("Years of Experience")
   @Html.TextAreaFor(model => model.YearsOfExperience)
-  @Html.LabelFor(model => model.Rank)
+  @Html.Label("Rank")
   @Html.TextAreaFor(model => model.Rank)
-  @Html.LabelFor(model => model.Specialty)
+  @Html.Label("Specialty")
   @Html.TextAreaFor(model => model.Specialty)
   <input type="submit" value="Add a stylist" />
 }
