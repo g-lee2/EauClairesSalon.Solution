@@ -4,33 +4,33 @@
 
 @model HairSalon.Models.Client
 
-<h2>Add a new client</h2>
-<br />
-<p><strong>NOTE:</strong> You need to have at least one stylist addeded before you can add a client!</p>
-<p>Go to @Html.ActionLink("this page", "Create", "Stylists") to add a stylist.</p>
+<div class="content">
+  <h2>Add a new client</h2>
+  <br />
+  <p><strong>NOTE:</strong> You need to have at least one stylist addeded before you can add a client!</p>
+  <p>Go to @Html.ActionLink("this page", "Create", "Stylists") to add a stylist.</p>
 
-@using (Html.BeginForm())
-{
-  @Html.Label("First Name")
+  @using (Html.BeginForm())
+  {
+    @Html.Label("First Name")
+    <br />
+    @Html.TextBoxFor(model => model.FirstName)
+    <br />
+    @Html.Label("Last Name")
+    <br />
+    @Html.TextBoxFor(model => model.LastName)
+    <br />
+    @Html.Label("Phone Number")
+    <br />
+    @Html.TextBoxFor(model => model.PhoneNumber)
+    <br />
+    @Html.LabelFor(model => model.Stylist)
+    <br />
+    @Html.DropDownList("StylistId")
+    <br />
+    <br />
+    <input type="submit" value="Add new client" />
+  }
   <br />
-  @Html.TextBoxFor(model => model.FirstName)
-  <br />
-  @Html.Label("Last Name")
-  <br />
-  @Html.TextBoxFor(model => model.LastName)
-  <br />
-  @Html.Label("Phone Number")
-  <br />
-  @Html.TextBoxFor(model => model.PhoneNumber)
-  <br />
-  @Html.LabelFor(model => model.Stylist)
-  <br />
-  @Html.DropDownList("StylistId")
-  <br />
-  <br />
-  <input type="submit" value="Add new client" />
-}
-<br />
-<br />
-<br />
-<p>@Html.ActionLink("Show all clients", "Index")</p>
+  <p>@Html.ActionLink("Show all clients", "Index")</p>
+</div>

@@ -4,34 +4,34 @@
 
 @model HairSalon.Models.Stylist
 
-<h2>Add a stylist</h2>
-<br />
-@using (Html.BeginForm())
-{
-  @Html.Label("First Name")
+<div class="content">
+  <h2>Add a stylist</h2>
   <br />
-  @Html.TextBoxFor(model => model.FirstName)
+  @using (Html.BeginForm())
+  {
+    @Html.Label("First Name")
+    <br />
+    @Html.TextBoxFor(model => model.FirstName)
+    <br />
+    @Html.Label("Last Name")
+    <br />
+    @Html.TextBoxFor(model => model.LastName)
+    <br />
+    @Html.Label("Years of Experience")
+    <br />
+    @Html.TextBoxFor(model => model.YearsOfExperience)
+    <br />
+    @Html.Label("Rank")
+    <br />
+    @Html.TextBoxFor(model => model.Rank)
+    <br />
+    @Html.Label("Specialty")
+    <br />
+    @Html.TextBoxFor(model => model.Specialty)
+    <br />
+    <br />
+    <input type="submit" value="Add a stylist" />
+  }
   <br />
-  @Html.Label("Last Name")
-  <br />
-  @Html.TextBoxFor(model => model.LastName)
-  <br />
-  @Html.Label("Years of Experience")
-  <br />
-  @Html.TextBoxFor(model => model.YearsOfExperience)
-  <br />
-  @Html.Label("Rank")
-  <br />
-  @Html.TextBoxFor(model => model.Rank)
-  <br />
-  @Html.Label("Specialty")
-  <br />
-  @Html.TextBoxFor(model => model.Specialty)
-  <br />
-  <br />
-  <input type="submit" value="Add a stylist" />
-}
-<br />
-<br />
-<br />
-<p>@Html.ActionLink("Show all stylists", "Index")</p>
+  <p>@Html.ActionLink("Show all stylists", "Index")</p>
+</div>

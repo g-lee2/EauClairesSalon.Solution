@@ -1,21 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+html, body {
+  min-height: 100%;
+}
 
 body {
-  background: whitesmoke;
-  font-family: Prosto, Sans-serif;
+  background-image: url("https://images.unsplash.com/photo-1531924224004-7beee12117a6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Montserrat', Sans-serif;
   text-align: center;
   align-items: center;
-  letter-spacing: 2px; 
+  letter-spacing: 3px; 
 }
 
 ul {
   display: inline-block;
+  text-align: left;
 }
 
 p {
-  background-color: #bbc9bb;
+  background-color: #bfcbda;
+  border-radius: 3px;
   color: white;
-  padding: 10px 20px;
+  padding: 20px;
+  width: 400px;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border: 2px solid rgb(110, 109, 109);
+  font-size: 20px;
+}
+
+a {
+  color: rgb(85, 85, 85);
 }
 
 a:visited {
@@ -24,10 +43,47 @@ a:visited {
 
 a:hover {
   text-decoration: none;
-  filter: brightness(200%);
+  color: rgb(227, 227, 227);
 }
 
 input[type="text"] {
   text-align: center;
 }
 
+.jumbotron {
+  border-radius: 0;
+  padding: 30px;
+  background: whitesmoke;
+}
+
+.content {
+  background: whitesmoke;
+  width: 500px;
+  padding: 50px 20px;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-size: 20px;
+}
+
+.salon-name {
+  font-family: 'Courgette', cursive;
+}
+
+hr {
+  border: none;
+  height: 3px;
+  background: black;
+  margin: 20px;
+}
+
+input {
+  font-family: 'Montserrat', Sans-serif;
+  letter-spacing: 3px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 2%;
+}

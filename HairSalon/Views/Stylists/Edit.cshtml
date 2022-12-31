@@ -4,37 +4,38 @@
 
 @model HairSalon.Models.Stylist
 
-<h2>Edit information</h2>
+<div class="content">
+  <h2>Edit information</h2>
 
-<h4>Edit this stylist's information: @Html.DisplayFor(model => model.FirstName)</h4>
+  <h4>Edit this stylist's information: @Html.DisplayFor(model => model.FirstName)</h4>
 
-@using (Html.BeginForm())
-{
-  @Html.HiddenFor(model => model.StylistId)
+  @using (Html.BeginForm())
+  {
+    @Html.HiddenFor(model => model.StylistId)
 
-  @Html.Label("First Name")
+    @Html.Label("First Name")
+    <br />
+    @Html.EditorFor(model => model.FirstName)
+    <br />
+    @Html.Label("Last Name")
+    <br />
+    @Html.EditorFor(model => model.LastName)
+    <br />
+    @Html.Label("Years of Experience")
+    <br />
+    @Html.EditorFor(model => model.YearsOfExperience)
+    <br />
+    @Html.Label("Rank")
+    <br />
+    @Html.EditorFor(model => model.Rank)
+    <br />
+    @Html.Label("Specialty")
+    <br />
+    @Html.EditorFor(model => model.Specialty)
+    <br />
+    <br />
+    <input type="submit" value="Save" />
+  }
   <br />
-  @Html.EditorFor(model => model.FirstName)
-  <br />
-  @Html.Label("Last Name")
-  <br />
-  @Html.EditorFor(model => model.LastName)
-  <br />
-  @Html.Label("Years of Experience")
-  <br />
-  @Html.EditorFor(model => model.YearsOfExperience)
-  <br />
-  @Html.Label("Rank")
-  <br />
-  @Html.EditorFor(model => model.Rank)
-  <br />
-  @Html.Label("Specialty")
-  <br />
-  @Html.EditorFor(model => model.Specialty)
-  <br />
-  <br />
-  <input type="submit" value="Save" />
-}
-<br />
-<br />
-<p>@Html.ActionLink("Go back and view stylists", "Index")</p>
+  <p>@Html.ActionLink("Go back and view stylists", "Index")</p>
+</div>
