@@ -48,7 +48,7 @@ This is an application that allows the user(Claire) to create a list that consis
 
 ## Re-creating the Database
 1. Launch MySQL Workbench and open your local instance.
-2. Then follow this link with [instructions](https://www.learnhowtoprogram.com/c-and-net-part-time/database-basics/introduction-to-mysql-workbench-creating-a-database) to create a database, based on the data from `grace_lee.sql`.
+2. Then follow [this link](https://www.learnhowtoprogram.com/c-and-net-part-time/database-basics/introduction-to-mysql-workbench-creating-a-database) with instructions to create a database, based on the data from `grace_lee.sql`.
 3. You should have two tables called `clients` and `stylists`.
 4. Your `clients` table should have 5 columns and your `stylists` table should have 6 columns.
 
