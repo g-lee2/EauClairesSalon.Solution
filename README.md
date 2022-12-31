@@ -28,7 +28,7 @@ This is an application that allows the user(Claire) to create a list that consis
 ```
 * Within the production directory "HairSalon", create a new file called `appsettings.json`.
 
-* Within `appsettings.json`, put in the following code, replacing the `uid` and `pwd` values with your own username and password for MySQL. 
+* Within `appsettings.json`, put in the following code, replacing the `uid` and `pwd` values with your own username and password for MySQL Workbench. Please install MySQL Workbench if not already installed on your local machine. 
 
 ```json
 {
@@ -47,8 +47,10 @@ This is an application that allows the user(Claire) to create a list that consis
 ```
 
 * To re-create the database:
-1. 
-2. 
+1. Launch MySQL Workbench and open your local instance.
+2. Then follow [instructions](https://www.learnhowtoprogram.com/c-and-net-part-time/database-basics/introduction-to-mysql-workbench-creating-a-database) to create a database, based on the data from `grace_lee.sql`.
+3. You should have two tables called `clients` and `stylists`.
+4. Your `clients` table should have 5 columns and your `stylists` table should have 6 columns.
 
 ## Known Bugs
 
